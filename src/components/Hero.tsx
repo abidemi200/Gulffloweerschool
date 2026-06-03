@@ -107,10 +107,7 @@ export default function Hero() {
               transition={{ delay: 0.4 }}
               className="text-4xl sm:text-5xl lg:text-6xl font-serif-academic font-bold text-white leading-tight"
             >
-              {slides[currentSlide].title}{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D4A017] via-[#D4A017] to-yellow-200">
-                {slides[currentSlide].coloredText}
-              </span>
+              {slides[currentSlide].title} {slides[currentSlide].coloredText}
             </motion.h1>
 
             <motion.p
@@ -188,14 +185,14 @@ export default function Hero() {
                 initial={{ opacity: 0, y: 15 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.5 + index * 0.1 }}
-                className="bg-white p-4 sm:p-5 rounded-2xl border border-[#7A1F35]/15 shadow-md flex items-start space-x-3.5 hover:shadow-lg hover:border-[#7A1F35]/30 transition-all group"
+                className="bg-white p-3.5 sm:p-5 rounded-2xl border border-[#7A1F35]/15 shadow-md flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left space-y-2.5 sm:space-y-0 sm:space-x-3.5 hover:shadow-lg hover:border-[#7A1F35]/30 transition-all group min-w-0"
               >
-                <div className={`p-2 rounded-lg bg-[#FAF7F5] border border-[#7A1F35]/10 group-hover:scale-110 transition-transform shrink-0`}>
+                <div className="p-2 rounded-lg bg-[#FAF7F5] border border-[#7A1F35]/10 group-hover:scale-110 transition-transform shrink-0">
                   <item.icon className="h-5 w-5 sm:h-6 sm:w-6 text-[#7A1F35]" />
                 </div>
-                <div className="text-left">
-                  <h4 className="text-xl sm:text-2xl font-bold font-serif-academic text-[#7A1F35] tracking-tight">{item.number}</h4>
-                  <p className="text-[10px] sm:text-xs text-slate-600 font-medium">{item.label}</p>
+                <div className="min-w-0">
+                  <h4 className="text-base sm:text-2xl font-bold font-serif-academic text-[#7A1F35] tracking-tight">{item.number}</h4>
+                  <p className="text-[9px] sm:text-xs text-slate-600 font-medium leading-tight sm:leading-normal mt-0.5 sm:mt-0">{item.label}</p>
                 </div>
               </motion.div>
             ))}

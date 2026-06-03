@@ -50,8 +50,13 @@ export default function Footer() {
           {/* Column A: School Branding */}
           <div className="md:col-span-4 space-y-4 text-left">
             <div className="flex items-center space-x-3 cursor-pointer" onClick={() => handleScrollToSegment('#home')}>
-              <div className="bg-white/10 p-2.5 rounded-lg border border-white/10 shadow-inner flex items-center justify-center">
-                <GraduationCap className="h-6 w-6 text-[#D4A017]" />
+              <div className="bg-white p-1 rounded-lg shadow-inner flex items-center justify-center w-11 h-11 shrink-0 overflow-hidden">
+                <img 
+                  src="https://i.imgur.com/47RmOnI.png" 
+                  alt="Gulf Flower Schools Logo" 
+                  referrerPolicy="no-referrer"
+                  className="h-full w-full object-contain"
+                />
               </div>
               <div>
                 <span className="block font-serif font-serif-academic font-black text-white text-lg tracking-wide leading-none">

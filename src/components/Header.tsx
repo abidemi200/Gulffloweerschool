@@ -58,8 +58,13 @@ export default function Header() {
               className="flex items-center space-x-3 cursor-pointer"
               onClick={() => handleLinkClick('#home')}
             >
-              <div className="bg-gradient-to-br from-[#D4A017] to-amber-600 p-2.5 rounded-lg shadow-inner flex items-center justify-center">
-                <GraduationCap className="h-6 w-6 text-white" />
+              <div className="bg-white p-1 rounded-lg shadow-inner flex items-center justify-center w-11 h-11 shrink-0 overflow-hidden">
+                <img 
+                  src="https://i.imgur.com/47RmOnI.png" 
+                  alt="Gulf Flower Schools Logo" 
+                  referrerPolicy="no-referrer"
+                  className="h-full w-full object-contain"
+                />
               </div>
               <div>
                 <span className="block font-serif font-black text-white text-lg leading-tight tracking-wide">
