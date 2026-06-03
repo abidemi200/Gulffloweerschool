@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-burgundy: #7A1F35;
+  --color-maroon: #8B2332;
+  --color-gold: #D4A017;
+  --color-cream: #FAF7F5;
+  --color-charcoal: #1F2937;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom premium elements */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF7F5;
+}
+::-webkit-scrollbar-thumb {
+  background: #7A1F35;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8B2332;
+}
+
+/* Base style overrides if needed */
+body {
+  font-family: var(--font-sans);
+  background-color: #FAF7F5;
+  color: #1F2937;
+  overflow-x: hidden;
+}
+
+.font-serif-academic {
+  font-family: var(--font-serif);
+}
+
