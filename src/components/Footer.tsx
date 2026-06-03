@@ -52,7 +52,7 @@ export default function Footer() {
             <div className="flex items-center space-x-3 cursor-pointer" onClick={() => handleScrollToSegment('#home')}>
               <div className="bg-white p-1 rounded-lg shadow-inner flex items-center justify-center w-11 h-11 shrink-0 overflow-hidden">
                 <img 
-                  src="https://i.imgur.com/47RmOnI.png" 
+                  src="https://i.imgur.com/2LYEPwq.png" 
                   alt="Gulf Flower Schools Logo" 
                   referrerPolicy="no-referrer"
                   className="h-full w-full object-contain"
